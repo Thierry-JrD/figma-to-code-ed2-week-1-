@@ -1,0 +1,1364 @@
+:root {
+    --normal-bg-color:#fff;
+    --neutral-50: #E8E9EA;
+    --neutral-100:#B8BABE;
+    --neutral-200:#96989E;
+    --neutral-300:#666A72;
+    --neutral-400:#484D56;
+    --neutral-500:#1A202C;
+    --neutral-600:#181D28;
+    --neutral-700:#12171F;
+    --neutral-800:#0E1218;   
+    --neutral-900:#0B0D12;
+    --primary-line-weight: 24px;
+    --cards-border-radius: 16px;
+    --screen-width: 1440px;
+    --nft-width: 287.58px;
+    --nft-height: 442.29px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    font-family: 'raleway';
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*overflow: hidden;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Separators */
+
+#separator_hoz {
+    position: absolute;
+    width: 100%;
+    top: 101px;
+    height: 1px;
+    background-color: var(--neutral-50);
+    z-index: 99;
+}
+
+#separator_ver {
+    padding: 10px 0;
+    border-left: 1px solid var(--neutral-50);
+    z-index: 100;
+}
+
+/* End of Separators */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Nav Bar */
+
+#nav_bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1200px;
+    padding: 16px 0;
+    margin-bottom: 106px;
+}
+
+.logo img{
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+}
+
+#nav_bar nav  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 449px;
+    height: 24px;
+}
+
+
+#nav_bar nav a {
+    text-decoration: none;
+    color: var(--neutral-700);
+    font-size: 16px;
+    line-height: var(--primary-line-weight);
+    transition: 1s ease;
+}
+
+#nav_bar nav a:hover {
+    text-decoration: underline;
+}
+
+#nav_bar #connexion button {
+    display: inline;
+    border: none;
+    font-family: 'raleway';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: var(--primary-line-weight);
+}
+
+#nav_bar #connexion .sign_up {
+    width: 110px;
+    height: 32px;
+    background: none;
+    border-right: 2px solid var(--neutral-700);
+    cursor: pointer;
+}
+
+#nav_bar #connexion .connect_wallets {
+    margin-left: 20px;
+    padding: 10px 26px;
+    height: 100%;
+    background-color: var(--neutral-800);
+    color: var(--normal-bg-color);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+#connexion .connect_wallets:hover {
+    background-color: var(--neutral-50);
+}
+
+#nav_bar .menu {
+    display: none;
+}
+
+/* End of Nav Bar */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Main  */ 
+
+main {
+    /*position: absolute;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 1200px;
+    gap: 96px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Hero Section */
+
+#hero_section {
+    position: relative;
+    font-size: 35px;
+    font-weight: 10;
+    color: var(--neutral-600);
+    width: 100%;
+    height: 607px;
+    /*margin-bottom: 94px;*/
+}
+
+#hero_section .content {
+    position: relative;
+    width: 787px;
+    height: 390px;
+}
+
+#hero_section .content h1 {
+    top: 0;
+    font-size: 120px;
+    font-weight: 400;
+    line-height: 104px;
+    margin-bottom: 52px;
+}
+
+#hero_section .content .sub_content {
+    position: absolute;
+    bottom: 0;
+    width: 412px;
+    height: 122px;
+    font-size: 16px;
+}
+
+#hero_section .content p {
+    width: 412px;
+    height: 48px;
+    font-weight: 600;
+    color: var(--neutral-400);
+    font-size: 16px;
+}
+
+#hero_section .content .sub_content div {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    bottom: 0;
+    width: 165px;
+    height: 48px;
+}
+
+#hero_section .content .sub_content span {
+    font-size: 16px;
+    font-weight: bold;
+    column-rule: var(--neutral-600);
+}
+
+#hero_section .content .sub_content button {
+    width: 48px;
+    height: 48px;
+    background: none;
+    border: 1px solid var(--neutral-600);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+#hero_section .content .sub_content button:hover {
+    background-color: var(--neutral-100);
+}
+
+
+/* NFT images settings */
+
+#hero_section .images {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 596.89px;
+    height: 588.19px;
+    /*border: 1px solid;*/
+}
+
+#hero_section .images .nft{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(170px + 45px);
+    /*border: 1px solid;*/
+    border-radius: 150px;
+    overflow: hidden;
+}
+
+#hero_section .images .nft img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+
+#hero_section .images .nft.ai {
+    width: var(--nft-width);
+    height: var(--nft-height);
+    bottom: 0;
+}
+
+#hero_section .images .nft.ai img {
+    width: 125%;
+}
+
+#hero_section .images .nft.kong {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--nft-width);
+    height: var(--nft-height);
+    right: 0;
+    top: 0;
+}
+
+#hero_section .images .nft.kong img {
+    width: 190%;
+}
+
+#hero_section .images .starlink {
+    position: absolute;
+    top: 15px;
+    left: 154px;
+    width: 157.44px;
+    height: 116.49px;
+    overflow: hidden;
+}
+
+#hero_section .images .starlink img {
+    width: 100%;
+}
+
+/* End of NFT images settings */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#collections_section {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    width: 100%;
+    /*margin-bottom: 94px;*/
+}
+
+#collections_section h2 {
+    font-size: 30px;
+    color: var(--neutral-800);
+}
+
+#filters_section {
+    display: flex;
+    justify-content: space-between;
+}
+
+#filters_section a {
+    font-size: 14px;
+    color: var(--neutral-800);
+}
+
+#filters_section #filters {
+    display: flex;
+    gap: 8px;
+}
+
+#filters_section #filters a {
+    text-decoration: none;
+    color: var(--neutral-800);
+    background: var(--neutral-50);
+    padding: 10px 26px;
+    border-radius: 10px;
+    transition: 0.5s ease;
+}
+
+#filters_section #filters a:nth-child(1), #filters_section #filters a:hover {
+    background-color: var(--neutral-800);
+    color: var(--normal-bg-color);
+}
+
+#collection_section h2 {
+    color: var(--neutral-800);
+}
+
+
+
+
+/* Cards section */
+
+#collections_section #collections_cards {
+    margin: 10px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+#collections_cards .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+    border: 1px solid var(--neutral-100);
+    width: 282px;
+    border-radius: var(--cards-border-radius);
+}
+
+#collections_cards .card:hover {
+    border: 1px solid var(--neutral-300);
+}
+
+#collections_cards .card .container_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 258px;
+    height: 213px;
+    border-radius: var(--cards-border-radius);
+    overflow: hidden;
+}
+
+#collections_cards .card .container_img img {
+    width: 100%; /* modified */
+}
+
+#collections_cards .card:nth-child(2) .container_img img {
+    width: 170%;
+}
+
+#collections_cards .card .container_info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 16px 0;
+}
+
+#collections_cards .card .container_info div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#collections_cards .card .container_info div img {
+    margin-right: 5px;
+}
+
+#collections_cards .card .place_a_bid {
+    width: 100%;
+    border: 1px solid var(--neutral-800);
+    background-color: var(--normal-bg-color);
+    color: var(--neutral-800);
+    padding: 10px 0;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+#collections_cards .card .place_a_bid:hover {
+    background-color: var(--neutral-800);
+    color: var(--normal-bg-color);
+}
+
+/* End of Cards section */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Create And Sell Section */
+
+/*#create_and_sell_section {
+    /*border: 1px solid;*/
+    /*margin-bottom: 94px;
+}*/
+
+#create_and_sell_section h2 {
+    color: var(--neutral-800);
+    font-size: 30px;
+    margin-bottom: 36px;
+}
+
+#create_and_sell_section #options {
+    width: 100%; /* modified */
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+#create_and_sell_section #options .option {
+    width: 282px;
+    padding: 24px;
+    background-color: var(--neutral-50);
+    border-radius: 20px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+#create_and_sell_section #options .option:hover {
+    background: var(--neutral-200);
+}
+
+#create_and_sell_section #options .option .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: var(--neutral-600);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+#create_and_sell_section #options .option .icon img {
+    width: 100%;
+}
+
+#create_and_sell_section #options .option .option_title {
+    margin-bottom: 10px;
+}
+
+#create_and_sell_section #options .option .option_title a {
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--neutral-800);
+}
+
+#create_and_sell_section #options .option p {
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--neutral-400);
+}
+
+/* End of Create And Sell Section */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Sign up now Section */
+
+#sign_up_now_section {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 72px 0;
+    width: 100%;
+    border-radius: 40px;
+    color: var(--normal-bg-color);
+}
+
+#sign_up_now_section img {
+    position: absolute;
+    width: 100%;
+    filter: brightness(50%);
+    z-index: -50;
+}
+
+#sign_up_now_section div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+#sign_up_now_section h2 {
+    font-size: 64px;
+}
+
+#sign_up_now_section p {
+    font-size: 20px;
+}
+
+#sign_up_now_section button {
+    background: var(--normal-bg-color);
+    color: var(--neutral-800);
+    border-radius: 50px;
+    border: none;
+    font-size: 16px;
+    font-weight: 525;
+    padding: 10px 26px;
+    transition: 0.5s ease;
+}
+
+#sign_up_now_section button:hover {
+    background: var(--neutral-800);
+    color: var(--normal-bg-color);
+}
+
+/* End of Sign up now Section */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer Section */
+
+footer {
+    width: 100%;
+}
+
+footer .logo {
+    margin-bottom: 10px;
+}
+
+footer #footer_separator {
+    width: 100%;
+    height: 1px;
+    background-color: var(--neutral-100);
+}
+
+footer .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 32px 0;
+}
+
+footer .content h3 {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--neutral-600);
+    font-weight: 600;
+}
+
+footer .content div {
+    width: 296px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+footer .content div a {
+    text-decoration: none;
+    color: #000;
+    transition: 0.5s ease;
+}
+
+footer .content div a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* End of Footer Section */
+
+@media screen and (max-width: 768px) {
+
+    #separator_hoz {
+        top: 76px;
+    }
+
+
+
+
+    
+
+    /* Nav Bar */
+
+    #nav_bar {
+        width: 676px;
+        height: 52px;
+    }
+
+    #nav_bar nav, #nav_bar #connexion {
+        display: none;
+    }
+
+    #nav_bar .menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        border-radius: 7px;
+        background: var(--neutral-50);
+        width: 30px;
+        height: 30px;
+        transition: 0.5s ease;
+    }
+
+    #nav_bar .menu:hover {
+        background: var(--neutral-200);
+    }
+
+    /* End of Nav Bar */
+
+
+
+
+
+
+
+    /* Main */
+
+    main {
+        width: 676px;
+    }
+
+
+
+
+
+
+
+    /* Hero Section */ 
+
+    #hero_section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 899px;
+    }
+
+    #hero_section .content {
+        width: 100%;
+        height: 312px;
+    }
+
+    #hero_section .content h1 {
+        font-size: 96px;
+        margin-bottom: 34px;
+        line-height: 83px;
+    }
+
+    #hero_section .content .sub_content {
+        width: 412px;
+        height: 114px;
+    }
+    
+    #hero_section .content p {
+        width: 412px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    #hero_section .images {
+        position: relative;
+    }
+
+    /* End of Hero Section */ 
+
+
+
+
+
+
+    /* Cards section */
+
+    #filters_section #filters {
+        gap: 5px;
+    }
+
+    #collections_section #collections_cards {
+        margin: 10px 0;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    /* End Cards section */
+
+
+
+
+
+
+    /* Create and Sell Section */
+
+    #create_and_sell_section #options {
+        width: 100%; /* modified */
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    /* End of Create and Sell Section */
+
+
+
+
+
+
+    /* Sign up now Section */
+    
+    #sign_up_now_section h2 {
+        font-family: 'raleway', sans-serif;
+        font-size: 46px;
+        font-weight: 500;
+    }
+    
+    #sign_up_now_section p {
+        font-size: 18px;
+    }
+
+    /* End of Sign up now Section */
+
+
+
+
+
+
+    /* Footer */
+
+    footer .content {
+
+        flex-direction: column;
+        align-items: normal;
+    }
+
+    footer .content h3 {
+        margin-bottom: 20px;
+    }
+
+    /* End of Footer */
+
+    /* End of Main */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Tablet Right Side Menu */
+
+#right_side_menu {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    right: 0;
+    top: 0;
+    background-color: var(--normal-bg-color);
+    border: 1px solid var(--neutral-800);
+    float: right;
+    width: 492px;
+    height: 922px;
+    z-index: 150;
+}
+
+#right_side_menu.active {
+    display: flex;
+}
+
+#right_side_menu .separator_ver {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    width: 388px;
+    height: 100%;
+    border-right: 1px solid var(--neutral-50);
+    padding: 10px 0;
+}
+
+#right_side_menu .separator_ver div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    width: 100%;
+    height: 46px;
+}
+
+#right_side_menu .separator_ver div:nth-child(1) .hide_menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: var(--neutral-50);
+    border: none;
+    border-radius: 7px;
+    transition: 0.5s ease;
+}
+
+#right_side_menu div:nth-child(1) .hide_menu:hover {
+    background: var(--neutral-200);
+}
+
+#right_side_menu .separator_ver nav {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    width: 100%;
+}
+
+#right_side_menu .separator_ver nav a {
+    text-decoration: none;
+    color: var(--neutral-700);
+    font-size: 16px;
+    line-height: var(--primary-line-weight);
+    transition: 1s ease;
+}
+
+#right_side_menu .separator_ver nav a:hover {
+    text-decoration: underline;
+}
+
+#right_side_menu .separator_ver .connexion {
+    display: flex;
+    align-items: center;
+}
+
+#right_side_menu .separator_ver .connexion button {
+    display: inline;
+    border: none;
+    font-family: 'raleway';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: var(--primary-line-weight);
+}
+
+#right_side_menu .separator_ver .connexion .sign_up {
+    width: 110px;
+    height: 32px;
+    background: none;
+    border-right: 2px solid var(--neutral-700);
+    cursor: pointer;
+}
+
+#right_side_menu .separator_ver .connexion .connect_wallets {
+    margin-left: 20px;
+    padding: 10px 26px;
+    height: 100%;
+    background-color: var(--neutral-800);
+    color: var(--normal-bg-color);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+#right_side_menu .separator_ver .connexion .connect_wallets:hover {
+    background-color: var(--neutral-400);
+}
+
+#right_side_menu .separator_hoz {
+    position: absolute;
+    width: 100%;
+    bottom: 60px;
+    height: 1px;
+    background-color: var(--neutral-50);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 375px) {
+
+    #nav_bar {
+        width: 335px;
+        height: 52px;
+    }
+
+    main {
+        overflow-x: hidden;
+        width: 335px;
+    }
+
+
+
+
+
+    /* Hero Section */ 
+
+    #hero_section {
+        height: 981px;
+    }
+
+    #hero_section .content {
+        width: 100%;
+        height: 286px;
+    }
+
+    #hero_section .content h1 {
+        font-size: 52px;
+        margin-bottom: 18px;
+        line-height: 82px;
+    }
+
+    #hero_section .content .sub_content {
+        width: 100%;
+        height: 104px;
+    }
+    
+    #hero_section .content p {
+        width: 100%;
+    }
+
+    #hero_section .content .sub_content {
+        width: 100%;
+        height: 104px;
+    }
+
+    #hero_section .images {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    /* End of Hero Section */ 
+
+
+
+
+
+
+
+    /* Cards section */
+
+    #collections_section h2 {
+        font-size: 24px;
+    }
+
+    #filters_section {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    #filters_section #filters {
+        flex-wrap: wrap;
+    }
+
+    #filters_section #filters a {
+        margin-right: 5px;
+    }
+
+
+    /* End Cards section */
+
+
+
+
+
+
+
+    /* Create and Sell Section */
+
+    #create_and_sell_section h2 {
+        font-size: 24px;
+    }
+
+    #create_and_sell_section #options {
+        width: 100%; /* modified */
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    /* End of Create and Sell Section */
+
+
+
+
+
+    #create_and_sell_section #options .option .icon img {
+        width: 100%;
+    }
+
+
+
+
+
+    /* Sign up now Section */
+
+    #sign_up_now_section {
+        height: 324px;
+    }
+
+    #sign_up_now_section img {
+        width: 200%;
+    }
+    
+    #sign_up_now_section div h2 {
+        font-size: 25px;
+        line-height: 40px;
+        font-weight: 500;
+    }
+    
+    #sign_up_now_section p {
+        width: 212px;
+        font-size: 12px;
+    }
+
+    /* End of Sign up now Section */
+
+
+
+
+
+
+    /* Footer */
+
+    footer .content h3 {
+        font-size: 20px;
+    }
+
+    footer .content div {
+        font-size: 12px;
+    }
+
+    #right_side_menu {
+        width: 346px;
+        height: 922px;
+    }
+
+    #right_side_menu .separator_ver {
+        width: 294px;
+        height: 100%;
+    }
+
+    #right_side_menu .separator_ver .connexion .connect_wallets {
+        margin-left: 20px;
+        padding: 10px 20px;
+        height: 100%;
+        background-color: var(--neutral-800);
+        color: var(--normal-bg-color);
+        border-radius: 50px;
+        cursor: pointer;
+        transition: 0.5s ease;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
