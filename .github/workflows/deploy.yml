@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main 
+      - main
 
 jobs:
   deploy:
@@ -11,16 +11,16 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v2  
 
     - name: Set up Ruby
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: '2.7.5' 
+        ruby-version: '3.0.0'  # before, I used this version : '2.7.5' and I modified 'gem install bundler' by 'gem install bundler -v 2.4.22'
 
     - name: Install dependencies
       run: |
-        gem install bundler
+        gem install bundler -v 2.4.22 
         bundle install
 
     - name: Build the site
