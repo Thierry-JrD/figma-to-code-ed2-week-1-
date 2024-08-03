@@ -3,28 +3,31 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main
+      - main 
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
+    - name: Checkout repository
+      uses: actions/checkout@v2
 
-      - name: Set up Jekyll (optional, for Jekyll sites)
-        uses: actions/setup-ruby@v1
-        with: 
-          ruby-version: '2.7'
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '2.7.5' 
 
-      - run: gem install bundler jekyll
+    - name: Install dependencies
+      run: |
+        gem install bundler
+        bundle install
 
-      - name: Build the site (Jekyll example)
-        run: bundle exec jekyll buil --destination ./docs
+    - name: Build the site
+      run: bundle exec jekyll build --destination ./docs
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./docs
